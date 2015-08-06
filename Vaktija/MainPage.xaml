@@ -8,6 +8,46 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.Resources>
+            <Style TargetType="TextBlock">
+                <Setter Property="Margin" Value="4,2,4,2" />
+            </Style>
+        </Grid.Resources>
+
+
+        <TextBlock x:Name="tbVaktija" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Text="Vaktija" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="18.667"/>
+        <TextBlock x:Name="tbZoraLabel" TextWrapping="Wrap" Grid.Column="0" Grid.Row="2" Text="Zora" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBlock x:Name="tbZora" TextWrapping="Wrap" Grid.Column="1" Grid.Row="2" Text="0:00" VerticalAlignment="Center" />
+        <TextBlock x:Name="tbIzlazakSuncaLabel" TextWrapping="Wrap" Grid.Column="0" Grid.Row="3" Text="Izlazak sunca" HorizontalAlignment="Right" VerticalAlignment="Bottom" />
+        <TextBlock x:Name="tbIzlazakSunca" TextWrapping="Wrap" Grid.Column="1" Grid.Row="3" Text="0:00" VerticalAlignment="Center"/>
+        <TextBlock x:Name="tbPodneLabel" TextWrapping="Wrap" Grid.Column="0" Grid.Row="4" Text="Podne" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBlock x:Name="tbPodne" TextWrapping="Wrap" Grid.Column="1" Grid.Row="4" Text="0:00" VerticalAlignment="Center"/>
+        <TextBlock x:Name="tbIkindijaLabel" TextWrapping="Wrap" Grid.Column="0" Grid.Row="5" Text="Ikindija" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBlock x:Name="tbIkindija" TextWrapping="Wrap" Grid.Column="1" Grid.Row="5" Text="0:00" VerticalAlignment="Center"/>
+        <TextBlock x:Name="tbAksamLabel" TextWrapping="Wrap" Grid.Column="0" Grid.Row="6" Text="Akšam" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBlock x:Name="tbAksam" TextWrapping="Wrap" Grid.Column="1" Grid.Row="6" Text="0:00" VerticalAlignment="Center"/>
+        <TextBlock x:Name="tbJacijaLabel" TextWrapping="Wrap" Grid.Column="0" Grid.Row="7" Text="Jacija" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+        <TextBlock x:Name="tbJacija" TextWrapping="Wrap" Grid.Column="1" Grid.Row="7" Text="0:00" VerticalAlignment="Center"/>
+
+
 
     </Grid>
 </Page>
