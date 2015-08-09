@@ -25,6 +25,24 @@ namespace Vaktija
         public MainPage()
         {
             this.InitializeComponent();
+
+            this.DataContext = Model.Vremena.GetInstance().VaktijaZaDan(DateTime.Now);
+        }
+
+        private void AppBarButtonLokacija_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(
+                typeof(Views.IzborGrada),
+                null,
+                new Windows.UI.Xaml.Media.Animation.DrillInNavigationTransitionInfo());
+        }
+
+        private void AppBarButtonPostavke_Click(object sender, RoutedEventArgs e)
+        {                          
+            this.Frame.Navigate(
+                typeof(Views.Postavke),
+                null,
+                new Windows.UI.Xaml.Media.Animation.DrillInNavigationTransitionInfo());
         }
     }
 }
